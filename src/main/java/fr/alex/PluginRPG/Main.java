@@ -8,19 +8,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin {
 
     public void onEnable(){
-        Bukkit.getServer().getPluginManager().registerEvents(new Death(), this);
-        Bukkit.getServer().getPluginManager().registerEvents(new LapisEnchant(), this);
-        Bukkit.getServer().getPluginManager().registerEvents(new ClickMenuKits(), this);
-        Bukkit.getServer().getPluginManager().registerEvents(new MenuKits(this), this);
-        Bukkit.getServer().getPluginManager().registerEvents(new BlockItemInv(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new PlayerJump(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new PlayerClick(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new ThrowSnowBall(), this);
-        Bukkit.getServer().getPluginManager().registerEvents(new Love(), this);
-        getCommand("TaMereGrand").setExecutor(new TaMereGrand());
-        getCommand("heal").setExecutor(new Heal());
-        getCommand("plume").setExecutor(new Plume());
         getCommand("start").setExecutor(new StartGame(this));
-        getCommand("revive").setExecutor(new revive());
-        getCommand("splatoon").setExecutor(new splatoon());
+
         Bukkit.getLogger().info("plugin demarré");
 
     }

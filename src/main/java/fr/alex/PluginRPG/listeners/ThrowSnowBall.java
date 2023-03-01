@@ -22,20 +22,16 @@ public class ThrowSnowBall implements Listener {
     public void onThrowSnowBallHit(ProjectileHitEvent event) {
 
         ProjectileSource shooter = event.getEntity().getShooter();
-        Bukkit.getConsoleSender().sendMessage(shooter.toString());
-
         Entity snowball = event.getEntity();
-        Bukkit.getConsoleSender().sendMessage(snowball.toString());
+
 
         if ((event.getEntity() instanceof Snowball)) {
             Location loc = snowball.getLocation();
-            Bukkit.getConsoleSender().sendMessage(loc.toString());
+
             World world = event.getEntity().getWorld();
-            Bukkit.getConsoleSender().sendMessage(world.toString());
-            world.createExplosion(loc, 5);
+            world.createExplosion(loc, 50);
 
             Player player = (Player) shooter;
-            Bukkit.getConsoleSender().sendMessage(player.toString());
             player.sendMessage("YOU SHOT THE SNOWBALL!");
             player.getWorld().strikeLightning(snowball.getLocation());
         }
