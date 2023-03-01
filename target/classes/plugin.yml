@@ -15,3 +15,6 @@ commands :
   heal :
     description: heal tous le monde
     usage : bug commande heal
+  TaMereGrand:
+    description: explose
+    usage: bug zebi

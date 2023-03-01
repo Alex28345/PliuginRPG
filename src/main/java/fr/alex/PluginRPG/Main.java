@@ -13,6 +13,7 @@ public class Main extends JavaPlugin {
         Bukkit.getServer().getPluginManager().registerEvents(new ClickMenuKits(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new MenuKits(this), this);
         Bukkit.getServer().getPluginManager().registerEvents(new BlockItemInv(), this);
+        getCommand("TaMereGrand").setExecutor(new TaMereGrand());
         getCommand("heal").setExecutor(new Heal());
         getCommand("plume").setExecutor(new Plume());
         getCommand("start").setExecutor(new StartGame(this));

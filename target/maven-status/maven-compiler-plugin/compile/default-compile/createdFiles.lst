@@ -5,6 +5,7 @@ fr\alex\PluginRPG\listeners\ClickMenuKits.class
 fr\alex\PluginRPG\listeners\Death.class
 fr\alex\PluginRPG\listeners\LapisEnchant.class
 fr\alex\PluginRPG\Commands\Plume.class
+fr\alex\PluginRPG\Commands\TaMereGrand.class
 fr\alex\PluginRPG\Main.class
 fr\alex\PluginRPG\Items.class
 fr\alex\PluginRPG\listeners\MenuKits.class
