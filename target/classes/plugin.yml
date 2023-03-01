@@ -1,0 +1,17 @@
+main: fr.alex.PluginRPG.Main
+name: PluginRPG
+version: 1.0
+author: Alex
+commands :
+  start:
+    descrpition : teleporte au lobby
+    usage : t'es pas OP chakal
+  revive:
+    description: ressussite un joueur sur la position de celui qui l'execute
+    usage: il faut un pseudo valide
+  plume :
+    description: don de la plume au joueur
+    usage: bug commande plume
+  heal :
+    description: heal tous le monde
+    usage : bug commande heal

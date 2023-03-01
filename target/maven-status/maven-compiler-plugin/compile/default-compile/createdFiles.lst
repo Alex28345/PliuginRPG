@@ -1,0 +1,13 @@
+fr\alex\PluginRPG\Commands\StartGame.class
+fr\alex\PluginRPG\Commands\revive.class
+fr\alex\PluginRPG\listeners\BlockItemInv.class
+fr\alex\PluginRPG\listeners\ClickMenuKits.class
+fr\alex\PluginRPG\listeners\Death.class
+fr\alex\PluginRPG\listeners\LapisEnchant.class
+fr\alex\PluginRPG\Commands\Plume.class
+fr\alex\PluginRPG\Main.class
+fr\alex\PluginRPG\Items.class
+fr\alex\PluginRPG\listeners\MenuKits.class
+fr\alex\PluginRPG\Commands\splatoon.class
+fr\alex\PluginRPG\Commands\Heal.class
+fr\alex\PluginRPG\listeners\ClickInventory.class
