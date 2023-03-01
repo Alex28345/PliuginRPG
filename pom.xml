@@ -33,6 +33,14 @@
         </plugin>
     </plugins>
 </build>
+<profiles>
+    <profile>
+        <id>otherOutputDir</id>
+        <build>
+            <directory>C:\Users\Alexandre\Documents\OneDrive\serveur 1.17.1\plugins</directory>
+        </build>
+    </profile>
+</profiles>
 <repositories>
     <repository>
         <id>spigot-repo</id>

@@ -13,6 +13,8 @@ public class Main extends JavaPlugin {
         Bukkit.getServer().getPluginManager().registerEvents(new ClickMenuKits(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new MenuKits(this), this);
         Bukkit.getServer().getPluginManager().registerEvents(new BlockItemInv(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new ThrowSnowBall(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new Love(), this);
         getCommand("TaMereGrand").setExecutor(new TaMereGrand());
         getCommand("heal").setExecutor(new Heal());
         getCommand("plume").setExecutor(new Plume());
@@ -23,7 +25,6 @@ public class Main extends JavaPlugin {
 
     }
     public void onDisable(){
-
         Bukkit.getLogger().info("plugin off");
     }
 }
