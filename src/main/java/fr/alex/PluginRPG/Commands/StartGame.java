@@ -32,6 +32,17 @@ public class StartGame implements CommandExecutor {
 
                 Player player = (Player) sender;
                 player.teleport(new Location(Bukkit.getWorld("world"), 0.5, 101, 0.5));
+                //execute une commande
+
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "/world world");
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "/pos1 10,110,10");
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "/pos2 -10,100,-10");
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "/cut");
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "/faces stone");
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "/pos1 1,100,1");
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "/pos2 -1,100,-1");
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "/walls green_concrete");
+
             }
             return true;
         }return false;

@@ -16,9 +16,6 @@ import java.util.List;
 public class PlayerClick implements Listener{
     @EventHandler
     public void onPlayerClick(PlayerInteractEvent event) {
-        if (event.getAction() == org.bukkit.event.block.Action.LEFT_CLICK_BLOCK) {
-            return ;
-        }
         Block block = event.getClickedBlock();
         Player player = event.getPlayer();
 
@@ -50,8 +47,10 @@ public class PlayerClick implements Listener{
                     Location[] newallowLoc = {playerLocation.clone().add(-1,0,0),playerLocation.clone().add(1,0,0),playerLocation.clone().add(0,0,1),playerLocation.clone().add(0,0,-1),
                             playerLocation.clone().add(-1,0,1),playerLocation.clone().add(-1,0,-1),playerLocation.clone().add(1,0,1),playerLocation.clone().add(1,0,-1)};
                     for(Location allowblockloc : newallowLoc){
-                        player.getWorld().getBlockAt(allowblockloc.add(0,0,0)).setType(Material.GREEN_CONCRETE);
+                        player.getWorld().getBlockAt(allowblockloc.add(0,-1,0)).setType(Material.GREEN_CONCRETE);
                     }
+                player.getWorld().getBlockAt(playerLocation.add(0,-1,0)).setType(Material.STONE);
+
                 }
             }else{
                 player.sendMessage("Case inaccessible");
